@@ -67,6 +67,7 @@ public class InMemoryBlueprintPersistence implements BlueprintsPersistence {
 	public Set<Blueprint> getAll() throws BlueprintNotFoundException {
 		Set<Blueprint> blueprintFound = new HashSet<Blueprint>();
 		for (Blueprint b : blueprints.values()) {
+			
 			blueprintFound.add(b);
 		}
 		return blueprintFound;
